@@ -1,0 +1,26 @@
+.white-button{
+    background-color: white;
+    border-width: 1px;
+    border-color: #ced4da;
+    border-style: solid;
+}
+.pink{
+    color: #ffa8c3;
+}
+
+.pink-bg{
+    background-color: #ffa8c3;
+}
+.white-bg{
+    background-color: white;
+}
+
+.navbar-brand
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
