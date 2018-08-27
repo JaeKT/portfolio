@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .white-button{
     background-color: white;
     border-width: 1px;
@@ -5,23 +8,37 @@
     border-style: solid;
 }
 .pink{
-    color: #ffa8c3;
+    color: #e1c5ca;
 }
 
 .pink-bg{
-    background-color: #ffa8c3;
+    background-color: #e1c5ca;
 }
 .white-bg{
     background-color: white;
 }
-
-
 .navbar-brand
 {
     margin: 0;
     padding: 0;
 }
 
+.btn-outline-secondary:active {
+    box-shadow:none !important;
+    border-color:white !important;
+}
+
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+.btn-secondary, .btn-outline-secondary:hover  {
+    background-color: #e1c5ca !important;
+    border-color:white !important;
+}
 
 
 

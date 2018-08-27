@@ -14,10 +14,10 @@
     <title>Pure Bootstrap Site :)</title>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- Navbar -->
-      <nav class="navbar  navbar-expand-md navbar-light bg-light  p-0">
+      <nav class="navbar navbar-expand-md navbar-light bg-light p-0 fixed-top">
 
       <a href="#" class ="navbar-brand "><i><img src="images/brand-logo.png" style="width: 200px"></i></a>
       <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav" ><span class="navbar-toggler-icon"></span></button>
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="nav">
         <ul class="navbar-nav mx-auto">
           <li class"nav-item"><a class="nav-link text-dark text-uppercase px-3" href="#">Home</a></li>
-          <li class"nav-item"><a class="nav-link text-dark text-uppercase px-3" href="#">Skills</a></li>
+          <li class"nav-item"><a class="nav-link text-dark text-uppercase px-3" href="#skills">Skills</a></li>
           
           <li class="nav-item dropdown" data-toggle="dropdown"><a class="nav-link text-dark text-uppercase px-3" href="#">Projects <i class="fas fa-angle-down pink"></i></a>
             <div class="dropdown-menu">
@@ -43,7 +43,7 @@
           <div class="input-group">
            <input type="text" class="form-control" placeholder="Search">
            <div class="input-group-append">
-             <button type="button" class="btn white-button"><i class="fas fa-search" style="color: #ffa8c3"></i></button>
+             <button type="button" class="btn white-button"><i class="fas fa-search" style="color: #e1c5ca"></i></button>
            </div>
           </div>
 
@@ -56,20 +56,62 @@
     <!-- Banner -->
 
     <section>
-      <div class="container-fluid">
-        <div class="row white-bg" style="height: 100vh">
-            <div class="col-sm-10">
-              Just a lonely testing tag.
-              <h1>
+      <div id="skills" class="container-fluid">
+        <div class="row white-bg justify-content-center align-items-center" style="height: 100vh">
+            <div class="col-sm-10 text-center">
+              <h1 class="display-2 text-capitalize">
               <span>pure bootstrap</span>
               <span>website</span>
               </h1>
+              <h2 class="pink">Lorem ipsum dolor sit amet consectetur adipisicing elit sint</h2>
+              <a href="#" class="btn btn-outline-secondary text-uppercase p-2 m-1">Press here</a>
+              <a href="#" class="btn btn-outline-secondary text-uppercase p-2 m-1">Press here</a>
+
             </div>
         </div>
-    </section>
-
+      </section>
     <!-- End of Banner -->
-      
+    
+    <!-- Skills -->
+      <section class="bg-light p-5">
+        <div class="container-fluid">
+          <!--Title-->
+
+          <div class="row">
+            <div class="col text-center mb-3">
+              <h1 class="pink display-2">Skills</h1>
+              <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora corrupti laudantium error harum ducimus eius optio sun?
+              </p>
+            </div>
+          </div>
+          <!--End of Title-->
+
+          <div class="row text-center">
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+              <i class="fas fa-desktop fa-6x pink"></i>
+              <h1 class="text-secondary mt-2">Programming</h1>
+              <p class="text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi similique accusantium, ullam tempora reprehenderit placeat recusandae est omnis sapiente!</p>
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+              <i class="far fa-edit fa-6x pink"></i>
+              <h1 class="text-secondary mt-2">Design</h1>
+              <p class="text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi similique accusantium, ullam tempora reprehenderit placeat recusandae est omnis sapiente!</p>
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+              <i class="fas fa-handshake fa-6x pink"></i>
+              <h1 class="text-secondary mt-2">Marketing</h1>
+              <p class="text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi similique accusantium, ullam tempora reprehenderit placeat recusandae est omnis sapiente!</p>
+              <a href="#" class="btn btn-outline-secondary">Learn More</a>
+            </div>
+
+          </div>
+        </div>  
+      </section>
+    
     <!-- my Javascript -->
     <script src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
